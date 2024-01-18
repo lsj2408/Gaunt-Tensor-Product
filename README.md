@@ -31,7 +31,7 @@ Developing equivariant neural networks for the E(3) group plays an important rol
   <img src="assets/intro-1.png" width="800"/>
 </div>
 
-In this work, we propose a systematic approach to substantially accelerate the computation of the tensor products of irreps. We mathematically connect the commonly used Clebsch-Gordan coefficients to the Gaunt coefficients, which are integrals of products of three spherical harmonics. Through Gaunt coefficients, the tensor product of irreps becomes equivalent to the multiplication between spherical functions represented by spherical harmonics. This perspective further allows us to change the basis for the equivariant operations from spherical harmonics to a 2D Fourier basis. Consequently, the multiplication between spherical functions represented by a 2D Fourier basis can be efficiently computed via the convolution theorem and Fast Fourier Transforms. This transformation reduces the complexity of full tensor products of irreps <font color='red'>**from $\mathcal{O}(L^6)$ to $\mathcal{O}(L^3)$**</font>, where $L$ is the max degree of irreps.
+In this work, we propose a systematic approach to substantially accelerate the computation of the tensor products of irreps. We mathematically connect the commonly used Clebsch-Gordan coefficients to the Gaunt coefficients, which are integrals of products of three spherical harmonics. Through Gaunt coefficients, the tensor product of irreps becomes equivalent to the multiplication between spherical functions represented by spherical harmonics. This perspective further allows us to change the basis for the equivariant operations from spherical harmonics to a 2D Fourier basis. Consequently, the multiplication between spherical functions represented by a 2D Fourier basis can be efficiently computed via the convolution theorem and Fast Fourier Transforms. This transformation reduces the complexity of full tensor products of irreps **from O(L^6) to O(L^3)**, where L is the max degree of irreps.
 
 Building upon this approach, we introduce the Gaunt Tensor Product, which serves as a new method for efficient equivariant operations across various model designs. We provide a comprehensive study on major operation classes that are widely used in equivariant models for the Euclidean group, demonstrating the generality of our method and how it can be used to design efficient operations:
 - Equivariant Feature Interactions:
@@ -51,18 +51,18 @@ Building upon this approach, we introduce the Gaunt Tensor Product, which serves
 ### Efficiency Comparison
 
 <div align="center">
-  <img src="assets/Figure-1.png" width="800"/>
+  <img src="assets/figure-1.png" width="800"/>
 </div>
 
 
 ### Force Field Modeling -- Open Catalyst Project
 <div align="center">
-  <img src="assets/Table-1.png" width="800"/>
+  <img src="assets/table-1.png" width="800"/>
 </div>
 
 ### Force Field Modeling -- 3BPA
 <div align="center">
-  <img src="assets/Table-2.png" width="800"/>
+  <img src="assets/table-2.png" width="800"/>
 </div>
 
 ## Quick Start
