@@ -1,6 +1,6 @@
 # Gaunt-Tensor-Product
 
-This repo is the official implementation of ICLR 2024 Spotlight Presentation: [Enabling Efficient Equivariant Operations in the Fourier Basis via Gaunt Tensor Products](https://openreview.net/forum?id=mhyQXJ6JsK&noteId=Ns2MkZwbUx). 
+This repo is the official implementation of ICLR 2024 Spotlight Presentation: [Enabling Efficient Equivariant Operations in the Fourier Basis via Gaunt Tensor Products](https://arxiv.org/abs/2401.10216). 
 
 > Enabling Efficient Equivariant Operations in the Fourier Basis via Gaunt Tensor Products
 >
@@ -9,7 +9,8 @@ This repo is the official implementation of ICLR 2024 Spotlight Presentation: [E
 > Contact: Shengjie Luo (luosj@stu.pku.edu.cn), Tianlang Chen (tlchen@pku.edu.cn), Aditi S. Krishnapriyan (aditik1@berkeley.edu)
 
 ## News
-- [24-01-15] 🔥 Our work is accepted at [ICLR 2024](https://iclr.cc/Conferences/2024) as a <font color='red'>**Spotlight**</font> presentation!
+- [24-01-19] 👀 Our paper is updated on [arXiv](https://arxiv.org/abs/2401.10216).
+- [24-01-15] 🔥 Our work is accepted at [ICLR 2024](https://openreview.net/forum?id=mhyQXJ6JsK&noteId=Ns2MkZwbUx) as a <font color='red'>**Spotlight**</font> presentation!
 
 ## Contents
 - [Todo](https://github.com/lsj2408/Gaunt-Tensor-Product#todo)
@@ -21,7 +22,7 @@ This repo is the official implementation of ICLR 2024 Spotlight Presentation: [E
 
 ## TODO
 
-- [ ] Release the arXiv version.
+- [x] Release the arXiv version.
 - [ ] Release the code of efficiency comparison.
 - [ ] Clean up and release the code of force field modeling.
 
@@ -35,18 +36,20 @@ In this work, we propose a systematic approach to substantially accelerate the c
 
 Building upon this approach, we introduce the Gaunt Tensor Product, which serves as a new method for efficient equivariant operations across various model designs. We provide a comprehensive study on major operation classes that are widely used in equivariant models for the Euclidean group, demonstrating the generality of our method and how it can be used to design efficient operations:
 - Equivariant Feature Interactions:
-  - [PhiSNet](https://arxiv.org/abs/2106.02347)
-  - [So3krates](https://arxiv.org/abs/2205.14276)
-  - [QHNet](https://arxiv.org/abs/2306.04922)
+  - PhiSNet: [Paper](https://arxiv.org/abs/2106.02347)
+  - So3krates: [Paper](https://arxiv.org/abs/2205.14276) & [Code](https://github.com/thorben-frank/mlff)
+  - QHNet: [Paper](https://arxiv.org/abs/2306.04922) & [Code](https://github.com/divelab/AIRS/tree/main/OpenDFT/QHNet)
 - Equivariant Convolutions:
-  - [TFN](https://arxiv.org/abs/1802.08219), [SE(3)-Transformer](https://arxiv.org/abs/2006.10503)
-  - [NequIP](https://www.nature.com/articles/s41467-022-29939-5)
-  - [SEGNN](https://arxiv.org/abs/2110.02905)
-  - [eSCN](https://arxiv.org/abs/2302.03655)
-  - [Equiformer](https://arxiv.org/abs/2206.11990)/[EquiformerV2](https://arxiv.org/abs/2306.12059)
+  - TFN: [Paper](https://arxiv.org/abs/1802.08219) & [Code](https://github.com/tensorfieldnetworks/tensorfieldnetworks)
+  - SE(3)-Transformer: [Paper](https://arxiv.org/abs/2006.10503) & [Code](https://github.com/FabianFuchsML/se3-transformer-public)
+  - NequIP: [Paper](https://www.nature.com/articles/s41467-022-29939-5) & [Code](https://github.com/mir-group/nequip)
+  - SEGNN: [Paper](https://arxiv.org/abs/2110.02905) & [Code](https://github.com/RobDHess/Steerable-E3-GNN)
+  - eSCN: [Paper](https://arxiv.org/abs/2302.03655) & [Code](https://github.com/Open-Catalyst-Project/ocp)
+  - Equiformer: [Paper](https://arxiv.org/abs/2206.11990) & [Code](https://github.com/atomicarchitects/equiformer)
+  - EquiformerV2: [Paper](https://arxiv.org/abs/2306.12059) & [Code](https://github.com/atomicarchitects/equiformer_v2)
 - Equivariant Many-Body Interactions: 
-  - [MACE](https://arxiv.org/abs/2206.07697)
-  - [BOTNet](https://arxiv.org/abs/2205.06643)
+  - MACE: [Paper](https://arxiv.org/abs/2206.07697) & [Code](https://github.com/ACEsuit/mace)
+  - BOTNet: [Paper](https://arxiv.org/abs/2205.06643)
 ## Main results
 ### Efficiency Comparison
 
@@ -70,7 +73,16 @@ Building upon this approach, we introduce the Gaunt Tensor Product, which serves
   
 ## Citation
 If you find this work useful, please kindly consider citing our work:
-
+```
+@misc{luo2024enabling,
+      title={Enabling Efficient Equivariant Operations in the Fourier Basis via Gaunt Tensor Products}, 
+      author={Shengjie Luo and Tianlang Chen and Aditi S. Krishnapriyan},
+      year={2024},
+      eprint={2401.10216},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
 ## Acknowledgments
 We would like to thank the following open source efforts for pushing the boundary of equivariant networks for the Euclidean group:
 * [e3nn](https://github.com/e3nn/e3nn)
