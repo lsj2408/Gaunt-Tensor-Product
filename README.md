@@ -23,7 +23,7 @@ This repo is the official implementation of ICLR 2024 Spotlight Presentation: [E
 ## TODO
 
 - [x] Release the arXiv version.
-- [ ] Release the code of efficiency comparison.
+- [x] Release the code of efficiency comparison.
 - [ ] Clean up and release the code of force field modeling.
 
 ## Introduction
@@ -69,7 +69,9 @@ Building upon this approach, we introduce the Gaunt Tensor Product, which serves
 </div>
 
 ## Quick Start
-- TODO: Please stay tuned.
+- Efficiency Comparison Experiment: See `efficiency-comparison/README.md`
+- Force Field Modeling
+  - 3BPA: See `force-field-modeling-3bpa/README.md`
   
 ## Citation
 If you find this work useful, please kindly consider citing our work:
