@@ -1,0 +1,2 @@
+include MACE/modules/coefficient_f2sh.pt
+include MACE/modules/coefficient_sh2f.pt
